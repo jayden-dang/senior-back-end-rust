@@ -1,0 +1,28 @@
+{
+    "name": "senior-back-end-rust",
+    "version": "1.0.0",
+    "scripts": {
+        "prepare": "husky install"
+    },
+    "keywords": ["rust", "axum", "back-end", "high performance"],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/cli": "^19.2.1",
+        "@commitlint/config-conventional": "^19.1.0",
+        "cypress": "^13.7.2",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-cypress": "^2.15.1",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5",
+        "typescript": "^5.4.4"
+    },
+    "hooks" : {
+        "commit-msg" : "commitlint -E HUSKY_GIT_PARAMS"
+    },
+    "lint-staged" : {
+        "*.rs" : "cargo make format",
+        "*.{ts,js,json}" : "prettier --write --ignore-unknown"
+    }
+}
