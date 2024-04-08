@@ -1,0 +1,37 @@
+#+TITLE: Become a Senior Back-end Developer with Rust
+#+AUTHOR: Dang Quang Vu
+#+EMAIL: jayden.dangvu@gmail.com
+#+SETUPFILE: ~/theme-readtheorg.setup
+#+HTML_HEAD: <style>pre.src{background:#343131;color:white;} </style>
+
+* Table of Contents :TOC:
+- [[#introduction][Introduction]]
+- [[#how-to-run][How to Run]]
+- [[#contents][Contents]]
+
+* Introduction
+This project is a Rust-based back-end developer training course for beginners. The course is designed to help you become a pre-senior back-end developer with Rust if you understand all of thing in this course and can use it on your project.
+
+* How to Run
++ install cargo-make
+#+begin_src sh
+cargo install cargo-make
+cargo install cargo-nextest
+#+end_src
+
++ Build
+#+begin_src sh
+cargo make build
+#+end_src
+
++ Run Database use Docker
+#+begin_src sh
+cargo make db
+#+end_src
+
++ Run server
+#+begin_src sh
+cargo make dev
+#+end_src
+
+* Contents
